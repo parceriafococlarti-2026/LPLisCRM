@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lis — CRM para beleza e estética</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="box-nome-logo">
+        <a href="#" class="nav-logo">
+          <img
+            src="assets/imagens/logo/LogoPNG.png"
+            alt="Logotipo"
+            class="img-logo"
+          />Lis</a
+        >
+      </div>
+      <ul class="nav-links">
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost">Entrar</a>
+        <a href="https://wa.me/5522992474384?text=Olá!%20Tenho%20interesse%20em%20conhecer%20o%20Lis%20e%20gostaria%20de%20solicitar%20meu%20acesso." class="btn-primary">Obtenha acesso &RightArrow;</a>
+      </div>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="mobile-close" id="mobileClose">✕</button>
+      <a href="#funcionalidades" class="mobile-link">Funcionalidades</a>
+      <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a
+        href="#"
+        class="btn-primary"
+        style="font-size: 16px; padding: 14px 32px"
+        >Entrar</a
+      >
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">✦ CRM para beleza e estética</div>
+          <h1 class="hero-h1">
+            Organize sua clínica.<br /><em>Encante</em> suas clientes.
+          </h1>
+          <p class="hero-sub">
+            O Lis é o sistema simples que cabeleireiras, esteticistas e clínicas
+            usam para nunca mais perder um agendamento — ou uma cliente.
+          </p>
+          <div class="hero-ctas">
+            <a href="#" class="btn-hero">Entrar</a>
+            <a href="#funcionalidades" class="hero-link"
+              >Ver funcionalidades <span>→</span></a
+            >
+          </div>
+          <div class="hero-trust">
+            <div class="trust-avatars">
+              <span style="background: #c9746a">AP</span>
+              <span style="background: #8fa68a">RC</span>
+              <span style="background: #b5a08c">CM</span>
+              <span style="background: #c9746a">JL</span>
+            </div>
+            <p class="trust-text">
+              <strong
+                >Feito para profissionais <br />de beleza e estética</strong
+              ><br />
+            </p>
+          </div>
+        </div>
+
+        <!-- DASHBOARD MOCKUP -->
+        <div class="dashboard-wrap fade-in" style="transition-delay: 0.15s">
+          <div class="dashboard-mockup">
+            <div class="db-topbar">
+              <div class="db-dots">
+                <div class="db-dot db-dot-r"></div>
+                <div class="db-dot db-dot-y"></div>
+                <div class="db-dot db-dot-g"></div>
+              </div>
+              <span class="db-title">Lis — Agenda de hoje</span>
+            </div>
+            <div class="db-body">
+              <div class="db-main">
+                <div class="db-section-label">Segunda-feira, 30 de março</div>
+                <div class="db-appt">
+                  <span class="db-time">09:00</span>
+                  <div class="db-dot-appt" style="background: #c9746a"></div>
+                  <div class="db-appt-info">
+                    <div class="db-name">Ana Lima</div>
+                    <div class="db-service">Limpeza de pele</div>
+                  </div>
+                  <span class="db-status db-status-ok">Confirmada</span>
+                </div>
+                <div class="db-appt">
+                  <span class="db-time">11:30</span>
+                  <div class="db-dot-appt" style="background: #8fa68a"></div>
+                  <div class="db-appt-info">
+                    <div class="db-name">Fernanda</div>
+                    <div class="db-service">Hidratação capilar</div>
+                  </div>
+                  <span class="db-status db-status-ok">Confirmada</span>
+                </div>
+                <div class="db-appt">
+                  <span class="db-time">14:00</span>
+                  <div class="db-dot-appt" style="background: #b5a08c"></div>
+                  <div class="db-appt-info">
+                    <div class="db-name">Júlia Moura</div>
+                    <div class="db-service">Design de sobrancelha</div>
+                  </div>
+                  <span class="db-status db-status-wait">Aguardando</span>
+                </div>
+                <div class="db-appt">
+                  <span class="db-time">16:00</span>
+                  <div class="db-dot-appt" style="background: #c9746a"></div>
+                  <div class="db-appt-info">
+                    <div class="db-name">Mariana S.</div>
+                    <div class="db-service">Massagem relaxante</div>
+                  </div>
+                  <span class="db-status db-status-ok">Confirmada</span>
+                </div>
+              </div>
+              <div class="db-sidebar">
+                <div class="db-kpi">
+                  <div class="db-kpi-label">Faturamento</div>
+                  <div class="db-kpi-value">R$ 3.840</div>
+                  <div class="db-kpi-sub">↑ 12% este mês</div>
+                </div>
+                <div class="db-kpi">
+                  <div class="db-kpi-label">Atend. hoje</div>
+                  <div class="db-kpi-value">4</div>
+                  <div class="db-kpi-sub">de 5 agendados</div>
+                </div>
+                <div class="db-next">
+                  <div class="db-next-label">🎂 Aniversário</div>
+                  <div class="db-next-name">Ana Lima</div>
+                  <div class="db-next-time">Hoje!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card">
+            <div class="float-icon">📅</div>
+            <div>
+              <div class="float-text-label">Próximo agendamento</div>
+              <div class="float-text-val">14:00 · Júlia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DORES -->
+    <section id="dores">
+      <div class="section-inner">
+        <span class="section-tag">Por que o Lis?</span>
+        <h2 class="section-title">Chega de confusão.<br />O Lis resolve.</h2>
+        <p class="section-sub">
+          Você cuida da beleza das suas clientes. Deixa a parte chata com a
+          gente.
+        </p>
+        <div class="dores-grid">
+          <div class="dor-card fade-in">
+            <div class="dor-emoji">📅</div>
+            <div class="dor-problem">Agendamento duplo</div>
+            <h3 class="dor-title">Duas clientes no mesmo horário</h3>
+            <div class="dor-divider"></div>
+            <div class="dor-solution">
+              Bloqueio automático de horários. Impossível marcar em cima.
+            </div>
+          </div>
+          <div class="dor-card fade-in" style="transition-delay: 0.1s">
+            <div class="dor-emoji">💸</div>
+            <div class="dor-problem">Financeiro no achismo</div>
+            <h3 class="dor-title">Quanto você faturou esse mês?</h3>
+            <div class="dor-divider"></div>
+            <div class="dor-solution">
+              Faturamento do mês na palma da mão, sem planilha nem calculadora.
+            </div>
+          </div>
+          <div class="dor-card fade-in" style="transition-delay: 0.2s">
+            <div class="dor-emoji">😟</div>
+            <div class="dor-problem">Clientes que somem</div>
+            <h3 class="dor-title">Cliente que não volta mais</h3>
+            <div class="dor-divider"></div>
+            <div class="dor-solution">
+              Aniversários, histórico e lembretes para você nunca esquecer uma
+              cliente.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section id="funcionalidades">
+      <div class="section-inner">
+        <span class="section-tag">Funcionalidades</span>
+        <h2 class="section-title">
+          Tudo que sua clínica precisa,<br />sem complicação
+        </h2>
+        <p class="section-sub">
+          Simples de usar no celular ou no computador. Sem treinamento, sem
+          manual.
+        </p>
+        <div class="feat-grid">
+          <div class="feat-card fade-in">
+            <div class="feat-icon">📆</div>
+            <h3 class="feat-title">Agenda inteligente</h3>
+            <p class="feat-desc">
+              Visualize o dia, a semana e o mês. Sem conflitos de horário, sem
+              estresse.
+            </p>
+          </div>
+          <div class="feat-card fade-in" style="transition-delay: 0.07s">
+            <div class="feat-icon">👩</div>
+            <h3 class="feat-title">Cadastro de clientes</h3>
+            <p class="feat-desc">
+              Histórico de atendimentos, aniversário, observações e muito mais.
+              Tudo num lugar só.
+            </p>
+          </div>
+          <div class="feat-card fade-in" style="transition-delay: 0.14s">
+            <div class="feat-icon">💰</div>
+            <h3 class="feat-title">Controle financeiro</h3>
+            <p class="feat-desc">
+              Acompanhe o faturamento do mês e o desempenho de cada serviço em
+              tempo real.
+            </p>
+          </div>
+          <div class="feat-card fade-in" style="transition-delay: 0.21s">
+            <div class="feat-icon">💅</div>
+            <h3 class="feat-title">Catálogo de serviços</h3>
+            <p class="feat-desc">
+              Cadastre seus serviços com preço e duração. O Lis bloqueia o tempo
+              certo automaticamente.
+            </p>
+          </div>
+          <div class="feat-card fade-in" style="transition-delay: 0.28s">
+            <div class="feat-icon">📊</div>
+            <h3 class="feat-title">Relatórios</h3>
+            <p class="feat-desc">
+              Entenda o desempenho da sua clínica com dados simples, visuais e
+              exportáveis.
+            </p>
+          </div>
+          <div class="feat-card fade-in" style="transition-delay: 0.35s">
+            <div class="feat-icon">🎯</div>
+            <h3 class="feat-title">Gestão de leads</h3>
+            <p class="feat-desc">
+              Acompanhe potenciais clientes do primeiro contato até a primeira
+              consulta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos">
+      <div class="section-inner">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">Quem usa não volta<br />pro caderninho</h2>
+        <p class="section-sub">Profissionais reais, resultados reais.</p>
+        <div class="dep-grid">
+          <div class="dep-card fade-in">
+            <div class="dep-stars">★★★★★</div>
+            <p class="dep-quote">
+              Antes eu perdia cliente por esquecer de confirmar. Agora o Lis me
+              lembra de tudo. Não consigo imaginar trabalhar sem ele.
+            </p>
+            <div class="dep-author">
+              <div class="dep-avatar" style="background: #c9746a">AP</div>
+              <div>
+                <div class="dep-name">Ana Paula</div>
+                <div class="dep-role">Esteticista</div>
+              </div>
+            </div>
+          </div>
+          <div class="dep-card fade-in" style="transition-delay: 0.1s">
+            <div class="dep-stars">★★★★★</div>
+            <p class="dep-quote">
+              Finalmente sei quanto faturei no mês sem precisar somar no papel.
+              Me deu clareza pra aumentar os preços na hora certa.
+            </p>
+            <div class="dep-author">
+              <div class="dep-avatar" style="background: #8fa68a">RC</div>
+              <div>
+                <div class="dep-name">Renata Campos</div>
+                <div class="dep-role">Manicure</div>
+              </div>
+            </div>
+          </div>
+          <div class="dep-card fade-in" style="transition-delay: 0.2s">
+            <div class="dep-stars">★★★★★</div>
+            <p class="dep-quote">
+              Em 10 minutos minha agenda tava configurada. Nunca foi tão fácil
+              organizar a clínica. Minhas atendentes amaram também.
+            </p>
+            <div class="dep-author">
+              <div class="dep-avatar" style="background: #b5a08c">CM</div>
+              <div>
+                <div class="dep-name">Camila Mendes</div>
+                <div class="dep-role">Clínica de estética</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-inner">
+        <span class="section-tag">Dúvidas</span>
+        <h2 class="section-title" style="margin-bottom: 8px">
+          Perguntas frequentes
+        </h2>
+        <p class="section-sub">Ficou com dúvida? A gente responde.</p>
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-q">
+              Preciso instalar alguma coisa?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Não. O Lis é 100% online e funciona direto no navegador — no
+                celular ou no computador. Sem download, sem instalação.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Posso usar sozinha, sem equipe?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Sim! O Plano Individual foi feito exatamente pra profissionais
+                autônomas. Você gerencia tudo sozinha, de forma simples e
+                rápida.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              Meus dados ficam salvos com segurança?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Sim. Tudo fica armazenado na nuvem com segurança. Você não perde
+                nada se trocar de celular ou computador.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-q">
+              Como faço para ter acesso ao Lis?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Entre em contato com nossa equipe. O acesso é liberado após uma
+                conversa rápida.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="cta">
+      <div class="section-inner" style="text-align: center">
+        <h2 class="cta-title">Quer conhecer o Lis?</h2>
+        <p class="cta-sub">Entre em contato e receba seu acesso.</p>
+        <a href="https://wa.me/5522992474384?text=Olá!%20Tenho%20interesse%20em%20conhecer%20o%20Lis%20e%20gostaria%20de%20solicitar%20meu%20acesso." class="btn-cta">Fale conosco →</a>
+        <p class="cta-note">Acesso liberado após conversa com nossa equipe</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <a href="#" class="footer-logo">Lis</a>
+          <span class="footer-tagline">CRM para beleza e estética</span>
+        </div>
+        <div class="footer-links">
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#faq">FAQ</a>
+          <a href="#">Contato</a>
+        </div>
+        <div class="box-footer-copy">
+          <span class="footer-copy">Um CRM por <a href="https://www.instagram.com/paulo.carvalhooficiall?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="link-footer-copy">Paulo Carvalho</a> e <a href="https://clarti.com.br" class="link-footer-copy">ClarTI</a></span>
+          <br />
+          <span class="footer-copy"
+            >© 2026 Lis. Todos os direitos reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

@@ -755,6 +755,15 @@ section {
 .feat-card:nth-child(6) .feat-icon {
   background: var(--secondary-light);
 }
+.feat-card:nth-child(7) .feat-icon {
+  background: #fdf4e8;
+}
+.feat-card:nth-child(8) .feat-icon {
+  background: #e8f4fd;
+}
+.feat-card:nth-child(9) .feat-icon {
+  background: var(--primary-light);
+}
 .feat-title {
   font-size: 17px;
   font-weight: 600;
